@@ -8,7 +8,6 @@ using SimpleVision.Base;
 
 namespace SimpleVision.Tool
 {
-
     public class ToolIO: INterfaceItem
     {
         /// <summary>
@@ -64,5 +63,7 @@ namespace SimpleVision.Tool
             Belong = belong;
         }
     }
+
+
 
 }

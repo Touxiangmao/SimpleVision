@@ -121,7 +121,7 @@ namespace SimpleVision.Tool.TemplateMatching
         }
 
 
-        private HTuple row, col;
+    
         public HXLDCont CreateShapeModel()
         {
             had_Model = true;
@@ -236,12 +236,6 @@ namespace SimpleVision.Tool.TemplateMatching
 
             if (score.Length <= 0) return null;
             homMat2D.VectorAngleToRigid(0, 0, 0, row, column, angle);
-
-            var homMat2D2 = new HHomMat2D();
-                 homMat2D2.VectorAngleToRigid(this.row, col, 0, row, column, angle);
-         var  b= ModelRegion.AffineTransRegion(homMat2D2, "nearest_neighbor");
-
-            ViewController.addIconicVar(b);
 
             var contoursAffinTrans = modelContours.AffineTransContourXld(homMat2D);
             return contoursAffinTrans;
