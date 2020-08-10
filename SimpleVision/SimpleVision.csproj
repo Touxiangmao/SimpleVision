@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E081AADB-4E2C-46EA-8EBF-C78601C584A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimpleVision</RootNamespace>
+    <AssemblyName>SimpleVision</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="halcondotnet, Version=12.0.0.0, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\MVTec\HALCON-12.0\bin\dotnet35\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.ThemeVS2015.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\FormDockFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormDockFormBase.designer.cs">
+      <DependentUpon>FormDockFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ViewRoi\FunctionPlot.cs" />
+    <Compile Include="Base\ViewRoi\GraphicsContext.cs" />
+    <Compile Include="Base\ViewRoi\HalconWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ViewRoi\HalconWindow.Designer.cs">
+      <DependentUpon>HalconWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ViewRoi\HObjectEntry.cs" />
+    <Compile Include="Base\ViewRoi\HWndCtrl.cs" />
+    <Compile Include="Base\ViewRoi\ImageTools.cs" />
+    <Compile Include="Base\ViewRoi\ROI.cs" />
+    <Compile Include="Base\ViewRoi\ROICircle.cs" />
+    <Compile Include="Base\ViewRoi\ROICircularArc.cs" />
+    <Compile Include="Base\ViewRoi\ROIController.cs" />
+    <Compile Include="Base\ViewRoi\RoiCreator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ViewRoi\RoiCreator.Designer.cs">
+      <DependentUpon>RoiCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ViewRoi\RoiInterfac.cs" />
+    <Compile Include="Base\ViewRoi\ROILine.cs" />
+    <Compile Include="Base\ViewRoi\ROIPoint.cs" />
+    <Compile Include="Base\ViewRoi\ROIRectangle1.cs" />
+    <Compile Include="Base\ViewRoi\ROIRectangle2.cs" />
+    <Compile Include="Base\ViewRoi\ROITools.cs" />
+    <Compile Include="FormHalconWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHalconWindow.Designer.cs">
+      <DependentUpon>FormHalconWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInput.Designer.cs">
+      <DependentUpon>FormInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJobs.Designer.cs">
+      <DependentUpon>FormJobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProjects.Designer.cs">
+      <DependentUpon>FormProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTools.Designer.cs">
+      <DependentUpon>FormTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Structure\Job.cs" />
+    <Compile Include="Structure\JobView.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Structure\Project.cs" />
+    <Compile Include="Structure\Solution.cs" />
+    <Compile Include="Tool\ImageTool\FormReadImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool\ImageTool\FormReadImage.Designer.cs">
+      <DependentUpon>FormReadImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\INterfaceTool.cs" />
+    <Compile Include="Base\LItem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\LList.cs" />
+    <Compile Include="Tool\ImageTool\ReadImage.cs" />
+    <Compile Include="Tool\SmartRay\FormSmartRayAcquisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool\SmartRay\FormSmartRayAcquisition.Designer.cs">
+      <DependentUpon>FormSmartRayAcquisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\SmartRay\SmartRayAcquisition.cs" />
+    <Compile Include="Tool\SSZN\FormSSZNAcquisitio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool\SSZN\FormSSZNAcquisitio.Designer.cs">
+      <DependentUpon>FormSSZNAcquisitio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\SSZN\PinnedObject.cs" />
+    <Compile Include="Tool\SSZN\SR7LinkFunc.cs" />
+    <Compile Include="Tool\SSZN\SSZNAcquisition.cs" />
+    <Compile Include="Tool\TemplateMatching\FormModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool\TemplateMatching\FormModel.designer.cs">
+      <DependentUpon>FormModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\TemplateMatching\TemplateMatching.cs" />
+    <Compile Include="Tool\ToolBase.cs" />
+    <Compile Include="Tool\ToolHelper.cs" />
+    <Compile Include="Tool\ToolIO.cs" />
+    <EmbeddedResource Include="Base\FormDockFormBase.resx">
+      <DependentUpon>FormDockFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ViewRoi\HalconWindow.resx">
+      <DependentUpon>HalconWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ViewRoi\RoiCreator.resx">
+      <DependentUpon>RoiCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHalconWindow.resx">
+      <DependentUpon>FormHalconWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInput.resx">
+      <DependentUpon>FormInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJobs.resx">
+      <DependentUpon>FormJobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProjects.resx">
+      <DependentUpon>FormProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTools.resx">
+      <DependentUpon>FormTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\ImageTool\FormReadImage.resx">
+      <DependentUpon>FormReadImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\SmartRay\FormSmartRayAcquisition.resx">
+      <DependentUpon>FormSmartRayAcquisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\SSZN\FormSSZNAcquisitio.resx">
+      <DependentUpon>FormSSZNAcquisitio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\TemplateMatching\FormModel.resx">
+      <DependentUpon>FormModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmartRayAcquisition.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReadImage.png" />
+    <None Include="Resources\SSZNAcquisition.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tool\SSZN\SR7Link.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(SolutionDir)SimpleVision\Tool\SSZN\SR7Link.dll $(TargetDir)SR7Link.dll</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

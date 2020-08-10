@@ -1,0 +1,22 @@
+{
+  "Name": "1",
+  "Type": "job",
+  "Belong": "1",
+  "CurrentItemName": "",
+  "Items": [
+    {
+      "Name": "ReadImage",
+      "Type": "SimpleVision.Tool.ImageTool.ReadImage",
+      "Belong": "1",
+      "CurrentItemName": "",
+      "Items": []
+    },
+    {
+      "Name": "TemplateMatching",
+      "Type": "SimpleVision.Tool.TemplateMatching.TemplateMatching",
+      "Belong": "1",
+      "CurrentItemName": "",
+      "Items": []
+    }
+  ]
+}

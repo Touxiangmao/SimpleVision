@@ -1,0 +1,13 @@
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.csprojAssemblyReference.cache
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.FormHalconWindow.resources
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.FormInput.resources
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.FormJobs.resources
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.FormProjects.resources
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.FormTools.resources
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.FormMain.resources
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.Properties.Resources.resources
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.Tool.ImageTool.FormReadImage.resources
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.Tool.SmartRay.FormSmartRayAcquisition.resources
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.Tool.SSZN.FormSSZNAcquisitio.resources
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.csproj.GenerateResource.cache
+D:\Users\Administrator\Desktop\SimpleVision\SimpleVision\obj\x64\Debug\SimpleVision.csproj.CoreCompileInputs.cache

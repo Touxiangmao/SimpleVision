@@ -1,0 +1,29 @@
+{
+  "Name": "ReadImage",
+  "Type": "SimpleVision.Tool.ImageTool.ReadImage",
+  "Belong": "1",
+  "AllowRepeat": true,
+  "ImagePaths": [
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-01.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-02.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-03.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-04.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-05.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-06.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-07.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-08.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-09.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-10.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-11.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-12.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-13.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-14.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-15.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-16.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-17.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-18.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-19.png",
+    "C:\\Users\\Public\\Documents\\MVTec\\HALCON-12.0\\examples\\images\\board\\board-20.png"
+  ],
+  "ImageIndex": 19
+}
