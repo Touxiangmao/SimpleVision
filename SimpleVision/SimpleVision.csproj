@@ -218,6 +218,13 @@
     <Compile Include="Base\LList.cs" />
     <Compile Include="Tool\ImageTool\ReadImage.cs" />
     <Compile Include="Base\LHimg.cs" />
+    <Compile Include="Tool\Positioning\FormPositioning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool\Positioning\FormPositioning.Designer.cs">
+      <DependentUpon>FormPositioning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\Positioning\Positioning.cs" />
     <Compile Include="Tool\SmartRay\FormSmartRayAcquisition.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -323,6 +330,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy $(SolutionDir)SimpleVision\Tool\SSZN\SR7Link.dll $(TargetDir)SR7Link.dll</PostBuildEvent>

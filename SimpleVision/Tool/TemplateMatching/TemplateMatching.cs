@@ -58,7 +58,6 @@ namespace SimpleVision.Tool.TemplateMatching
             var outputImage = new ToolOutput("输出结果", this.Name) { Item = new FindModelResult() };
             Output.Add(outputImage);
 
-
             Form = new FormModel(this);
         }
 
@@ -125,7 +124,6 @@ namespace SimpleVision.Tool.TemplateMatching
         public HXLDCont CreateShapeModel()
         {
             had_Model = true;
-            ModelRegion.AreaCenter(out row, out col);
             return CreateShapeModel(((HImage)Input["输入图片"].Item).ReduceDomain(ModelRegion), ModelParameter, out Model);
         }
 

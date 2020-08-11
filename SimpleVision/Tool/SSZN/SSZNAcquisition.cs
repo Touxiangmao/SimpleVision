@@ -23,6 +23,11 @@ namespace SimpleVision.Tool.SSZN
         public SR7IF_ETHERNET_CONFIG EthernetConfig;
         public double HeightRange;
         public int DeviceId;
+
+        /// <summary>
+        /// 取像频率
+        /// </summary>
+        public uint dwProfileCnt = 10;
     }
 
     public class SSZNAcquisition : ToolBase
@@ -71,8 +76,7 @@ namespace SimpleVision.Tool.SSZN
 
         public override void InitializeComponent(string blongJob)
         {
-         
-          
+            
             if (Form.IsDisposed)
             {
                 
@@ -97,6 +101,7 @@ namespace SimpleVision.Tool.SSZN
                 HeightRange = HeightRange,
                 EthernetConfig = EthernetConfig,
                 DeviceId = DeviceId,
+                dwProfileCnt = dwProfileCnt
 
             };
             Solution.Serialize(path, data);
@@ -112,6 +117,7 @@ namespace SimpleVision.Tool.SSZN
             HeightRange = data.HeightRange;
             EthernetConfig = data.EthernetConfig;
             DeviceId = data.DeviceId;
+            dwProfileCnt = data.dwProfileCnt;
             InitializeComponent(Belong);
             Connect(DeviceId, EthernetConfig);
         }
@@ -317,7 +323,7 @@ namespace SimpleVision.Tool.SSZN
                 _bStop = false;
                 BatchDataRollShow(_heightData, HeightRange, -HeightRange, 255, _mBatchWidth, _batchCallBackPoint,
                     tmpxs, tmpys); //显示高度数据
-                SR7LinkFunc.SR7IF_StopMeasure(0);
+            
 
             }
             if (Convert.ToBoolean(notify & 0x80000000))
